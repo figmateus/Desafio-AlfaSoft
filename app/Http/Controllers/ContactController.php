@@ -15,6 +15,13 @@ class ContactController extends Controller
         $this->service = $service;
     }
 
+
+    public function home()
+    {
+        $contacts = $this->service->getContacts();
+        return view('welcome', compact('contacts'));
+    }
+
     public function index()
     {
         $contacts = $this->service->getContacts();
