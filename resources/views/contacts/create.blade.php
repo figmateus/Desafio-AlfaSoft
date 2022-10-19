@@ -32,7 +32,7 @@
                                                 <input class="form-control" type="email" name="email" id="email"/>
                                             </div>
                                             <div class="col pt-2">
-                                                <button type="button" class="btn btn-outline-primary">create</button>
+                                                <button type="submit" class="btn btn-outline-primary">create</button>
                                                 <a type="button" class="btn btn-warning" href="{{route('contacts.index')}}">back</a>
                                             </div>
                                         </div>

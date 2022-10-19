@@ -18,9 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::get('/dashboard', function () {
-//    return view('dashboard');
-//})->middleware(['auth'])->name('dashboard');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
 Route::group(['prefix' => 'contacts', 'middleware' => ['auth']], function () {
     Route::get('/',[ContactController::class, 'index'])->name('contacts.index');
