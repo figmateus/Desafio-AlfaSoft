@@ -42,6 +42,11 @@ Utilizei o laravel breeze para a autenticação.</p>
 Bootstrap é um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples. Além disso, pode lidar com sites de desktop e páginas de dispositivos móveis da mesma forma.
 </p>
 
+## Test Coverage
+
+<p>O teste coverage das principais partes do projeto são:</p>
+<p align="start"><img src="testCoverage.png" width="600"></a></p>
+
 ## como instalar o projeto
 
 **Primeiro Clone o projeto**

@@ -19,6 +19,20 @@ class ContactControllerTest extends TestCase
      *
      * @return void
      */
+
+    public function test_user_can_see_contact_table()
+    {
+        //prepare
+        $user = User::factory()->create();
+        $this->actingAs($user);
+
+        //act
+        $response = $this->get('/contacts');
+        //assert
+        $response->assertViewHas('contacts');
+        $response->assertStatus(200);
+    }
+
     public function test_user_can_create_contact()
     {
         //prepare
